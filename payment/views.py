@@ -37,7 +37,8 @@ class PaymentView(View):
 
     def post(self, request):
 
-        amount = request.POST.get('amount')
+        # amount = request.POST.get('amount')
+        amount = AMOUNT
         order_id = random.random()
 
         # store in session
@@ -95,7 +96,7 @@ class PaymentCallbackView(View):
 
         # amount = request.session.get('amount')
         # amount = 2000
-        amount = 1000
+        amount = AMOUNT
 
         # if order_id != request.session.get('order_id'):
         #     return HttpResponseForbidden()

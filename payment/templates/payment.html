@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Payment</title>
+    <title> Download IT article </title>
 </head>
 <body>
     {% if messages %}
@@ -15,11 +15,11 @@
         </div>
     {% endif %}
     <div style="text-align: center">
-        <h4>PLease enter amount </h4>
+        <h4> Please enter amount </h4>
         <form action="{% url "payment" %}" method="post">
              {% csrf_token %}
-            <input type="text" name="amount" placeholder="Amount">
-            <input type="submit" value="Pay">
+            <!-- <input type="text" name="amount" placeholder="Amount"> -->
+            <input type="submit" value="Start payment">
         </form>
     </div>
 </body>
