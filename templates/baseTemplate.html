@@ -1,0 +1,48 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title> Ali khoshtinat </title>
+    <link rel="stylesheet" href="{% static 'homepage.css' %}">
+</head>
+<body>
+
+    <div class="parallax" >
+        <div>
+            <img src="{% static 'myPicResized.jpg' %}" class="firstImg">
+            <h1 class="textUnderFirstImg"> Ali khoshtinat </h1>
+
+        </div>
+    </div>
+    {% block aboutMeTitle %}
+    {% endblock %}
+
+    <div class="clearfix">
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+    <div class="parallax">
+        <div class="textUnderFirstImg" style="padding-bottom: 1%;">
+            <p>
+                Social
+            </p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/tehis" style="max-width: 10%;" target="_blank" >
+                <img src="{% static 'github.png' %}" style="max-width: 100%;" >
+            </a>
+            <a href="tehis99@gmail.com" style="max-width: 10%;" target="_blank">
+                <img src="{% static 'gmail.svg' %}" style="max-width: 100%;" alt="gmail">
+            </a>
+            <a href="https://www.instagram.com/ali_khoshtinattt/" style="max-width: 10%;" target="_blank">
+                <img src="{% static 'instagram.png' %}" style="max-width: 100%;">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

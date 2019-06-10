@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> Download IT article </title>
-</head>
-<body>
+{% extends 'baseTemplate.html' %}
+
+{% block content %}
+<div>
     {% if messages %}
         <div style="text-align: center">
             <ul class="messages">
@@ -15,12 +12,13 @@
         </div>
     {% endif %}
     <div style="text-align: center">
-        <h4> Please enter amount </h4>
-        <form action="{% url "payment" %}" method="post">
+        <h4> Please select your pdf </h4>
+        <form action="{% url "payment:index" %}" method="post">
              {% csrf_token %}
-            <!-- <input type="text" name="amount" placeholder="Amount"> -->
             <input type="submit" value="Start payment">
         </form>
     </div>
-</body>
-</html>
+</div>
+{% endblock %}
+
+

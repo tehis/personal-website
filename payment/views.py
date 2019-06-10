@@ -51,7 +51,7 @@ class PaymentView(View):
                 API_KEY,
                 order_id,
                 amount,
-                request.build_absolute_uri(reverse('payment_callback')),
+                request.build_absolute_uri(reverse('payment:payment_callback')),
             )
 
             if result.code != -1:
