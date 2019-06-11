@@ -1,7 +1,3 @@
-from django.shortcuts import render
-
-
-
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 from django.contrib import messages
@@ -9,7 +5,6 @@ from django.views.generic import View
 from django.http import HttpResponseBadRequest, HttpResponseForbidden
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
-
 import random
 
 # import conf
@@ -17,7 +12,7 @@ from .conf import *
 
 # Soap Client
 from zeep import Client
-
+from .utils import *
 
 class PaymentView(View):
     template_name = 'payment.html'
@@ -110,13 +105,24 @@ class PaymentCallbackView(View):
                 trans_id,
             )
 
+            if result == 0:
+                return renderPdf(NOT_FREE_PDF_PATH)
+            else:
+                return render(request, self.template_name)
             # if result == 0 then success payment
-            return render(request, self.template_name, {
-                'result_code':result,
-                'trans_id': trans_id
-            })
+            # return render(request, self.template_name, {
+            #     'result_code':result,
+            #     'trans_id': trans_id
+            # })
 
         else:
             return HttpResponseBadRequest()
 
 
+class GenerateFreePdf(View):
+    # template_name = 'payment.html'
+
+    def post(self, request):
+        return renderPdf(FREE_PDF_PATH)
+    def get(self, request):
+        return renderPdf(FREE_PDF_PATH)
