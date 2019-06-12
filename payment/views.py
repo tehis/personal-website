@@ -107,7 +107,7 @@ class PaymentCallbackView(View):
 
             # if result == 0:
             #     print("result code")
-            #     return renderPdf(NOT_FREE_PDF_PATH)
+            #     return renderPdf(NOT_FREE_PDF_PATH, "Summary", attachment)
             # else:
             #     return render(request, self.template_name)
             # if result == 0 then success payment
@@ -124,6 +124,6 @@ class GenerateFreePdf(View):
     # template_name = 'payment.html'
 
     def post(self, request):
-        return renderPdf(FREE_PDF_PATH)
+        return renderPdf(FREE_PDF_PATH, "Summary_of_Summary", "attachment")
     def get(self, request):
-        return renderPdf(FREE_PDF_PATH)
+        return renderPdf(FREE_PDF_PATH, "Summary_of_Summary", "attachment")

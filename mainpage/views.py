@@ -6,6 +6,6 @@ from .conf import *
 
 class GenerateCV(View):
     def post(self, request):
-        return renderPdf(CV_PATH)
+        return renderPdf(CV_PATH, "CV", "inline")
     def get(self, request):
-        return renderPdf(CV_PATH)
+        return renderPdf(CV_PATH, "CV", "inline")
