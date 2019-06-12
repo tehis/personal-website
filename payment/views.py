@@ -105,15 +105,16 @@ class PaymentCallbackView(View):
                 trans_id,
             )
 
-            if result == 0:
-                return renderPdf(NOT_FREE_PDF_PATH)
-            else:
-                return render(request, self.template_name)
+            # if result == 0:
+            #     print("result code")
+            #     return renderPdf(NOT_FREE_PDF_PATH)
+            # else:
+            #     return render(request, self.template_name)
             # if result == 0 then success payment
-            # return render(request, self.template_name, {
-            #     'result_code':result,
-            #     'trans_id': trans_id
-            # })
+            return render(request, self.template_name, {
+                'result_code':result,
+                'trans_id': trans_id
+            })
 
         else:
             return HttpResponseBadRequest()
