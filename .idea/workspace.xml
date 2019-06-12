@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="278bd81f-52fa-428a-a67f-f64d9a9e24be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/easy-install.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-40.8.0-py3.7.egg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools.pth" afterDir="false" />
-    </list>
+    <list default="true" id="278bd81f-52fa-428a-a67f-f64d9a9e24be" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +46,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/personal/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2440">
-              <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
+            <state relative-caret-position="424">
+              <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+              <folding>
+                <element signature="e#308#335#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,7 +141,6 @@
         <option value="$PROJECT_DIR$/personal/urls.py" />
         <option value="$PROJECT_DIR$/mainpage/views.py" />
         <option value="$PROJECT_DIR$/mainpage/urls.py" />
-        <option value="$PROJECT_DIR$/personal/settings.py" />
         <option value="$PROJECT_DIR$/assets/homepage.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/payment/urls.py" />
@@ -155,6 +150,7 @@
         <option value="$PROJECT_DIR$/payment/templates/callback.html" />
         <option value="$PROJECT_DIR$/payment/views.py" />
         <option value="$PROJECT_DIR$/templates/baseTemplate.html" />
+        <option value="$PROJECT_DIR$/personal/settings.py" />
       </list>
     </option>
   </component>
@@ -288,16 +284,15 @@
       <workItem from="1560196956859" duration="6409000" />
       <workItem from="1560240918381" duration="610000" />
       <workItem from="1560248226724" duration="10064000" />
-      <workItem from="1560321599327" duration="1490000" />
+      <workItem from="1560321599327" duration="2227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25329000" />
+    <option name="totallyTimeSpent" value="26066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15918803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -441,8 +436,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/personal/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2440">
-          <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
+        <state relative-caret-position="424">
+          <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+          <folding>
+            <element signature="e#308#335#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
