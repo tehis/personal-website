@@ -98,14 +98,14 @@ class PaymentCallbackView(View):
 
         if trans_id and order_id and amount:
             client = Client('https://api.nextpay.org/gateway/verify.wsdl')
-            resultJson = client.service.PaymentVerification(
+            result = client.service.PaymentVerification(
                 API_KEY,
                 order_id,
                 amount,
                 trans_id,
             )
 
-            result = json.loads(resultJson)
+            # result = json.loads(resultJson)
 
             card = result['card_holder']
             resultCode = result['code']
