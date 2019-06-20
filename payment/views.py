@@ -88,10 +88,9 @@ class PaymentCallbackView(View):
 
         trans_id = request.POST.get('trans_id')
         order_id = request.POST.get('order_id')
-
-        # amount = request.session.get('amount')
-        # amount = 2000
         amount = AMOUNT
+
+        print(f'order_id: {order_id}, trans_id: {trans_id}')
 
         # if order_id != request.session.get('order_id'):
         #     return HttpResponseForbidden()
@@ -105,6 +104,8 @@ class PaymentCallbackView(View):
                 trans_id,
             )
 
+            print(f'API KEY: {API_KEY}, orderId: {order_id}, trans_id: {trans_id}, amount: {amount}')
+
             # if result == 0:
             #     print("result code")
             #     return renderPdf(NOT_FREE_PDF_PATH, "Summary", attachment)
@@ -112,7 +113,7 @@ class PaymentCallbackView(View):
             #     return render(request, self.template_name)
             # if result == 0 then success payment
             return render(request, self.template_name, {
-                'result_code':result,
+                'result_code':result['code'],
                 'trans_id': trans_id
             })
 
