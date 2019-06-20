@@ -6,6 +6,7 @@ from django.http import HttpResponseBadRequest, HttpResponseForbidden
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 import random
+import json
 
 # import conf
 from .conf import *
@@ -97,15 +98,17 @@ class PaymentCallbackView(View):
 
         if trans_id and order_id and amount:
             client = Client('https://api.nextpay.org/gateway/verify.wsdl')
-            result = client.service.PaymentVerification(
+            resultJson = client.service.PaymentVerification(
                 API_KEY,
                 order_id,
                 amount,
                 trans_id,
             )
 
-            print(f'API KEY: {API_KEY}, orderId: {order_id}, trans_id: {trans_id}, amount: {amount}')
+            result = json.loads(resultJson)
 
+            card = result['card_holder']
+            resultCode = result['code']
             # if result == 0:
             #     print("result code")
             #     return renderPdf(NOT_FREE_PDF_PATH, "Summary", attachment)
@@ -113,7 +116,8 @@ class PaymentCallbackView(View):
             #     return render(request, self.template_name)
             # if result == 0 then success payment
             return render(request, self.template_name, {
-                'result_code':result['code'],
+                'card': card,
+                'result_code': resultCode,
                 'trans_id': trans_id
             })
 
