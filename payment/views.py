@@ -105,21 +105,19 @@ class PaymentCallbackView(View):
                 trans_id,
             )
 
-            # result = json.loads(resultJson)
-
-            card = result['card_holder']
+            # card = result['card_holder']
             resultCode = result['code']
-            # if result == 0:
-            #     print("result code")
-            #     return renderPdf(NOT_FREE_PDF_PATH, "Summary", attachment)
-            # else:
-            #     return render(request, self.template_name)
+            if resultCode == 0:
+                return renderPdf(NOT_FREE_PDF_PATH, "Summary", "attachment")
+            else:
+                return render(request, self.template_name)
+
             # if result == 0 then success payment
-            return render(request, self.template_name, {
-                'card': card,
-                'result_code': resultCode,
-                'trans_id': trans_id
-            })
+            # return render(request, self.template_name, {
+            #     'card': card,
+            #     'result_code': resultCode,
+            #     'trans_id': trans_id
+            # })
 
         else:
             return HttpResponseBadRequest()

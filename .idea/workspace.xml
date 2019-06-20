@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="278bd81f-52fa-428a-a67f-f64d9a9e24be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/payment/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personal/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/personal/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2561">
-              <caret line="131" column="4" lean-forward="true" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
+            <state relative-caret-position="401">
+              <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
               <folding>
                 <element signature="e#308#335#0" expanded="true" />
               </folding>
@@ -51,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/payment/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="100" column="57" lean-forward="true" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="59" />
+            <state relative-caret-position="161">
+              <caret line="104" column="27" lean-forward="true" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -63,11 +64,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/zeep/client.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/payment/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+            <state relative-caret-position="100">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,10 +115,10 @@
         <option value="$PROJECT_DIR$/payment/templates/payment.html" />
         <option value="$PROJECT_DIR$/mainpage/views.py" />
         <option value="$PROJECT_DIR$/payment/utils.py" />
-        <option value="$PROJECT_DIR$/personal/settings.py" />
         <option value="$PROJECT_DIR$/payment/templates/callback.html" />
-        <option value="$PROJECT_DIR$/payment/views.py" />
         <option value="$PROJECT_DIR$/payment/conf.py" />
+        <option value="$PROJECT_DIR$/personal/settings.py" />
+        <option value="$PROJECT_DIR$/payment/views.py" />
       </list>
     </option>
   </component>
@@ -246,12 +250,12 @@
       <workItem from="1560321599327" duration="5159000" />
       <workItem from="1560334558412" duration="389000" />
       <workItem from="1560335446956" duration="2641000" />
-      <workItem from="1561046929245" duration="3247000" />
+      <workItem from="1561046929245" duration="4672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35275000" />
+    <option name="totallyTimeSpent" value="36700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -369,16 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/payment/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -389,22 +383,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personal/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2561">
-          <caret line="131" column="4" lean-forward="true" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
-          <folding>
-            <element signature="e#308#335#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/payment/conf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/zeep/proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-236">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/zeep/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="113" column="23" lean-forward="true" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personal/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
+          <folding>
+            <element signature="e#308#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payment/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -421,18 +439,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/payment/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="100" column="57" lean-forward="true" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="59" />
+        <state relative-caret-position="161">
+          <caret line="104" column="27" lean-forward="true" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/zeep/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
         </state>
       </provider>
     </entry>
