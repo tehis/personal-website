@@ -108,7 +108,7 @@ class PaymentCallbackView(View):
             # card = result['card_holder']
             resultCode = result['code']
             if resultCode == 0:
-                return renderPdf(NOT_FREE_PDF_PATH, "Summary", "attachment")
+                return renderPdf(NOT_FREE_PDF_PATH, "Summary", "inline")
             else:
                 return render(request, self.template_name)
 
