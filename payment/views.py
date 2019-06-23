@@ -127,6 +127,6 @@ class GenerateFreePdf(View):
     # template_name = 'payment.html'
 
     def post(self, request):
-        return renderPdf(FREE_PDF_PATH, "Summary_of_Summary", "attachment")
+        return renderPdf(FREE_PDF_PATH, "About the course", "attachment")
     def get(self, request):
-        return renderPdf(FREE_PDF_PATH, "Summary_of_Summary", "attachment")
+        return renderPdf(FREE_PDF_PATH, "About the course", "attachment")
