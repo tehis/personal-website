@@ -12,9 +12,9 @@
         </div>
     {% endif %}
     <div style="text-align: center">
-        <p> In this episode of college I passed an useful course aboute information technology<br>
+        <p> In this episode of college I passed an useful course about information technology<br>
             My dear teacher was <a href="http://nekoo.ir" target="_blank"> <b> Dr Hashemi nekoo </b> </a> .<br>
-            I wrote summary of all of things that I learned from this course, and you can see that via this links:
+            I wrote summary of all things that I learned from this course, and you can see that via this links:
         </p>
         <div>
             <form action="{% url "payment:index" %}" method="post">
@@ -24,7 +24,7 @@
 
             <form action="{% url 'payment:free_pdf' %}" method="post">
                 {% csrf_token %}
-                <input type="submit" value="summary of this summary!(Free)">
+                <input type="submit" value="about the course(Free)">
             </form>
         </div>
 
